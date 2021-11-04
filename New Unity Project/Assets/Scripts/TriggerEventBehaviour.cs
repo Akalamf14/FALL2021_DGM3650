@@ -14,13 +14,13 @@ public class TriggerEventBehaviour : MonoBehaviour
           waitObj = new WaitForSeconds(delayTime);
      }
      
-     private IEnumerator OnTriggerEnter(Collider other)
+     private IEnumerator OnTriggerEnter2D(Collider2D other)
      {
           yield return waitObj;
           triggerEnterEvent.Invoke();
      }
 
-     private void OnTriggerExit(Collider other)
+     private void OnTriggerExit2D(Collider2D other)
      {
           triggerExitEvent.Invoke();
      }
