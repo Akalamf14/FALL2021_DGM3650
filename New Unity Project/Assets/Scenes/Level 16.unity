@@ -1776,7 +1776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6225580876222740051, guid: 7848d56586db9f74d96fab64f69b96cc, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5479972
+      value: 0.60964686
       objectReference: {fileID: 0}
     - target: {fileID: 6225580876222740051, guid: 7848d56586db9f74d96fab64f69b96cc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2998,6 +2998,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1529164287}
     m_Modifications:
+    - target: {fileID: 2703502036270351882, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2774057600927479152, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3054,6 +3058,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2774057600927479155, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
+      propertyPath: LevelManager
+      value: 
+      objectReference: {fileID: 560588011}
     - target: {fileID: 2774057600927479164, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
       propertyPath: m_Name
       value: Meteor (2)

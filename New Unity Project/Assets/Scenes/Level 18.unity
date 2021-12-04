@@ -212,6 +212,81 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7848d56586db9f74d96fab64f69b96cc, type: 3}
+--- !u!1 &142383861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 142383864}
+  - component: {fileID: 142383863}
+  - component: {fileID: 142383862}
+  m_Layer: 0
+  m_Name: Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &142383862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142383861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c2878bc88e9bd47950227adc2a2f7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myDoor: {fileID: 1191441068}
+  openTrigger: 1
+  closeTrigger: 0
+  openDoor: lvl18meteordown
+  closeDoor: PlatformDown
+--- !u!61 &142383863
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142383861}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &142383864
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142383861}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.4, y: 4.2, z: -64.20412}
+  m_LocalScale: {x: 2.0875, y: 0.19687499, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &158784354
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -275,7 +350,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Meteor (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2774057600927479155, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
 --- !u!1001 &211471310
 PrefabInstance:
@@ -534,6 +610,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7848d56586db9f74d96fab64f69b96cc, type: 3}
+--- !u!1 &535633787 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2774057600927479164, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
+  m_PrefabInstance: {fileID: 1941111359}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &535633789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535633787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dad4f37fa700d664081e70f980fc7451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1746025217}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  triggerExitEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  delayTime: 0.01
 --- !u!1001 &555431951
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -600,6 +712,42 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2774057600927479152, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
   m_PrefabInstance: {fileID: 2037755916}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &751238547 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2774057600927479164, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
+  m_PrefabInstance: {fileID: 158784354}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &751238549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751238547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dad4f37fa700d664081e70f980fc7451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1746025217}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  triggerExitEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  delayTime: 0.01
 --- !u!1001 &782274978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -784,6 +932,10 @@ PrefabInstance:
     - target: {fileID: 2793137889184545892, guid: 9c9609e801e0e2940b3217dcbfee8fb0, type: 3}
       propertyPath: m_Name
       value: PC
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793137889184545892, guid: 9c9609e801e0e2940b3217dcbfee8fb0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c9609e801e0e2940b3217dcbfee8fb0, type: 3}
@@ -1337,6 +1489,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7848d56586db9f74d96fab64f69b96cc, type: 3}
+--- !u!1 &1166965261 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2774057600927479164, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
+  m_PrefabInstance: {fileID: 2037755916}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1166965263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166965261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dad4f37fa700d664081e70f980fc7451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1746025217}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  triggerExitEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  delayTime: 0.01
 --- !u!1 &1191441067
 GameObject:
   m_ObjectHideFlags: 0
@@ -1549,6 +1737,42 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1291857918 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2774057600927479164, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
+  m_PrefabInstance: {fileID: 1652930516}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1291857920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291857918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dad4f37fa700d664081e70f980fc7451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1746025217}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  triggerExitEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  delayTime: 0.01
 --- !u!1001 &1313349498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1808,7 +2032,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Meteor (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2774057600927479155, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
 --- !u!1 &1353644183
 GameObject:
@@ -2049,6 +2274,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7848d56586db9f74d96fab64f69b96cc, type: 3}
+--- !u!1 &1477005403 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2774057600927479164, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
+  m_PrefabInstance: {fileID: 1733740951}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1477005405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477005403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dad4f37fa700d664081e70f980fc7451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1746025217}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  triggerExitEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  delayTime: 0.01
 --- !u!1001 &1523089646
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2314,8 +2575,45 @@ PrefabInstance:
       propertyPath: m_Name
       value: Meteor
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2774057600927479155, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
+--- !u!1 &1672035559 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2774057600927479164, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
+  m_PrefabInstance: {fileID: 1351842880}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1672035561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672035559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dad4f37fa700d664081e70f980fc7451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1746025217}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  triggerExitEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  delayTime: 0.01
 --- !u!1001 &1733740951
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2379,7 +2677,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Meteor (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2774057600927479155, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
 --- !u!1001 &1746025216
 PrefabInstance:
@@ -2706,7 +3005,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Meteor (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2774057600927479155, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
 --- !u!1001 &1961516922
 PrefabInstance:
@@ -2898,7 +3198,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Meteor (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2774057600927479155, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
 --- !u!4 &2082833761 stripped
 Transform:

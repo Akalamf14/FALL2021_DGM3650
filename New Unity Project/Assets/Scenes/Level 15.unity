@@ -919,6 +919,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2703502036270351882, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2774057600927479152, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -975,6 +979,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2774057600927479155, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
+      propertyPath: LevelManager
+      value: 
+      objectReference: {fileID: 369424375}
     - target: {fileID: 2774057600927479164, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
       propertyPath: m_Name
       value: Meteor (4)
@@ -1183,6 +1191,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2703502036270351882, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2774057600927479152, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -1239,6 +1251,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2774057600927479155, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
+      propertyPath: LevelManager
+      value: 
+      objectReference: {fileID: 369424375}
     - target: {fileID: 2774057600927479164, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
       propertyPath: m_Name
       value: Meteor (2)
@@ -1479,6 +1495,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2703502036270351882, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2774057600927479152, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -1501,7 +1521,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2774057600927479152, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.81
+      value: -3.641
       objectReference: {fileID: 0}
     - target: {fileID: 2774057600927479152, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1535,6 +1555,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2774057600927479155, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
+      propertyPath: LevelManager
+      value: 
+      objectReference: {fileID: 369424375}
     - target: {fileID: 2774057600927479164, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
       propertyPath: m_Name
       value: Meteor (13)
@@ -1734,6 +1758,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2703502036270351882, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2774057600927479152, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -1790,6 +1818,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2774057600927479155, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
+      propertyPath: LevelManager
+      value: 
+      objectReference: {fileID: 369424375}
     - target: {fileID: 2774057600927479164, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
       propertyPath: m_Name
       value: Meteor (5)
@@ -2062,6 +2094,7 @@ GameObject:
   - component: {fileID: 1169801728}
   - component: {fileID: 1169801727}
   - component: {fileID: 1169801726}
+  - component: {fileID: 1169801729}
   m_Layer: 0
   m_Name: Sprites2_3 (1)
   m_TagString: Untagged
@@ -2191,6 +2224,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1169801729
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169801725}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 40261176ca0319845ac6f5328fb5622b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1229253126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2198,6 +2250,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2703502036270351882, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2774057600927479152, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -2254,6 +2310,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2774057600927479155, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
+      propertyPath: LevelManager
+      value: 
+      objectReference: {fileID: 369424375}
     - target: {fileID: 2774057600927479164, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
       propertyPath: m_Name
       value: Meteor (3)
@@ -2348,6 +2408,7 @@ GameObject:
   - component: {fileID: 1288806140}
   - component: {fileID: 1288806139}
   - component: {fileID: 1288806141}
+  - component: {fileID: 1288806142}
   m_Layer: 0
   m_Name: Sprites2_3
   m_TagString: Untagged
@@ -2477,6 +2538,25 @@ PolygonCollider2D:
       - {x: 2.7949998, y: -2.48}
       - {x: 2.7949998, y: 1.03}
       - {x: 2.8049998, y: 1.03}
+--- !u!95 &1288806142
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288806138}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0b9489c2e6acc4f40aa9d827aa4834e4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1418673353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2546,6 +2626,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2703502036270351882, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2774057600927479152, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -2568,7 +2652,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2774057600927479152, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.14
+      value: -3.038
       objectReference: {fileID: 0}
     - target: {fileID: 2774057600927479152, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2602,6 +2686,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2774057600927479155, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
+      propertyPath: LevelManager
+      value: 
+      objectReference: {fileID: 369424375}
     - target: {fileID: 2774057600927479164, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
       propertyPath: m_Name
       value: Meteor (12)
@@ -2775,6 +2863,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2703502036270351882, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2774057600927479152, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -2797,7 +2889,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2774057600927479152, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.5
+      value: -2.44
       objectReference: {fileID: 0}
     - target: {fileID: 2774057600927479152, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2831,6 +2923,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2774057600927479155, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
+      propertyPath: LevelManager
+      value: 
+      objectReference: {fileID: 369424375}
     - target: {fileID: 2774057600927479164, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
       propertyPath: m_Name
       value: Meteor (7)
@@ -3281,6 +3377,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2703502036270351882, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2774057600927479152, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3325,6 +3425,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2774057600927479155, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
+      propertyPath: LevelManager
+      value: 
+      objectReference: {fileID: 369424375}
     - target: {fileID: 2774057600927479164, guid: cfe4beace80c2764886dee1bcd9fb51b, type: 3}
       propertyPath: m_Name
       value: Meteor (1)
